@@ -11,11 +11,12 @@ public class HomeLibTest extends TestCase {
     @Override
     protected void setUp() throws Exception {
         mHomeLib = new HomeLib();
-        System.out.println("JUnit setup is running before each test");
+        System.out.println("JUnit setup is running BEFORE each test");
     }
 
     @Override
     protected void tearDown() throws Exception {
+        System.out.println("JUnit tearDown is running AFTER each test");
     }
 
     public void testPalindrome() {
